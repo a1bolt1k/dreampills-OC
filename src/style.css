@@ -1,0 +1,1735 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+
+  font-family: "Helvetica", "Arial", sans-serif;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@font-face {
+  font-family: "Akzidenz-Grotesk Pro";
+  font-style: normal;
+  font-weight: 400;
+  src: local("akzidenzgroteskpro_regular"),
+       url("../fonts/akzidenzgroteskpro_regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Digital";
+  font-style: normal;
+  font-weight: 400;
+  src: local("digital"),
+       url("../fonts/digital.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Comfortaa";
+  font-style: normal;
+  font-weight: 400;
+  src: local("comfortaa_bold"),
+       url("../fonts/Comfortaa.ttf") format("ttf");
+}
+
+/* sign pages */
+.app {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+
+  background-image: url('../image/bg-sign.png');
+  background-size: cover;
+}
+
+.avatar {
+  display: flex;
+  width: 282px;
+  height: 282px;
+  margin: 0 auto;
+  margin-top: 155px;
+  /* padding-bottom: 20px; */
+
+  border-radius: 2rem;
+  background: linear-gradient(#E4E8F4, #458EBF);
+}
+
+.avatar-img {
+  margin: auto;
+}
+
+.link-to-main {
+  display: flex;
+  width: 58px;
+  height: 58px;
+  margin-left: 13px;
+  margin-top: 11%;
+
+  border-radius: 2rem;
+  background: linear-gradient(to bottom, #ADCDFC 0%, #00155E 50%, #6DF9FF 95%);
+}
+
+.link-to-main svg {
+  margin: auto;
+}
+
+.wrapper-sign {
+  margin: 0 auto;
+  margin-top: 70px;
+  padding-left: 71px;
+}
+
+.form-sign {
+  display: flex;
+}
+
+.wrapper-inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-sign {
+  width: 428px;
+  height: 43px;
+  padding: 8px;
+  margin-bottom: 17px;
+
+  font-family: 'Akzidenz-Grotesk Pro',  sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+
+  border: 3px solid #697C9A;
+  background-color: #D9D9D9;
+
+  outline-width: 0;
+}
+
+.input-sign::placeholder {
+  font-family: 'Akzidenz-Grotesk Pro',  sans-serif;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+}
+
+.promo-text {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+
+  font-size: 32px;
+  font-family: 'AkzidenzgroteskPro';
+  font-weight: 400;
+  color: white;
+}
+
+.promo-text svg {
+  margin-left: 5px;
+}
+
+@media (max-width: 1366px) {
+  .app {
+    background-image: url('../image/bg-sign1366.png');
+  }
+  .avatar {
+    width: 220px;
+    height: 220px;
+  }
+
+  .avatar-img {
+    width: 186px;
+    height: 186px;
+  }
+
+  .input-sign {
+    width: 300px;
+    height: 30px;
+    padding: 4px 8px;
+  
+    font-size: 16px;
+  }
+  
+  .input-sign::placeholder {
+    font-size: 16px;
+  }
+
+  .promo-text {
+    font-size: 24px;
+  }
+
+  .promo-text svg {
+    width: 52px;
+    height: 52px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .app {
+    background-image: url('../image/bg-sign1024.png');
+  }
+  .avatar {
+    width: 217px;
+    height: 217px;
+  }
+
+  .avatar-img {
+    width: 186px;
+    height: 186px;
+  }
+
+  .input-sign {
+    width: 247px;
+    height: 27px;
+    padding: 2px 8px;
+  }
+
+  .promo-text {
+    font-size: 16px;
+  }
+
+  .promo-text svg {
+    width: 31px;
+    height: 31px;
+  }
+
+  .link-to-main {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .app {
+    background-image: url('../image/bg-sign768.png');
+  }
+  .avatar {
+    width: 166px;
+    height: 166px;
+  }
+
+  .avatar-img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .input-sign {
+    width: 187px;
+    height: 20px;
+    padding: 0 8px;
+  
+    font-size: 16px;
+  }
+  
+  .input-sign::placeholder {
+    font-size: 16px;
+  }
+
+  .promo-text {
+    font-size: 14px;
+  }
+
+  .promo-text svg {
+    width: 26px;
+    height: 26px;
+  }
+
+  .link-to-main {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media (max-width: 414px) {
+  .app {
+    background-image: url('../image/bg-sign1366.png');
+  }
+  .avatar {
+    width: 90px;
+    height: 90px;
+  }
+
+  .avatar-img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .input-sign {
+    width: 144px;
+    height: 15px;
+    padding: 0 3px;
+  
+    font-size: 10px;
+  }
+  
+  .input-sign::placeholder {
+    font-size: 10px;
+  }
+
+  .promo-text {
+    font-size: 11px;
+  }
+
+  .promo-text svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .link-to-main {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+/* main */
+
+.main {
+  display: flex;
+  flex-direction: column;
+
+  background-color: #3594D8;
+  /* height: 100vh; */
+}
+
+.error-page {
+  width: 100%;
+  height: 1140px;
+  margin: 0 auto;
+  /* margin-top: 150px; */
+
+  background-color: #3494D9;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+
+  text-align: center;
+}
+
+.error-text {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20%;
+
+  font-family: "Digital", sans-serif;
+  font-size: 128px;
+  font-weight: 400;
+  color: white;
+}
+
+.error-text .pill {
+  display: inline-block;
+  width: 152px;
+  height: 155px;
+  /* background: linear-gradient(to right, #89cff0, #add8e6); */
+  /* border: 2px solid #000; */
+  /* border-radius: 50%; */
+  margin: 0 10px;
+  animation: shake 0.5s infinite;
+}
+
+.error-text .pill img {
+  width: 100%;
+  height: 100%;
+}
+
+.dreampills {
+  margin-top: 95px;
+}
+
+@keyframes shake {
+  0% { transform: translate(0, 0); }
+  25% { transform: translate(-2px, -2px); }
+  50% { transform: translate(2px, 2px); }
+  75% { transform: translate(-2px, 2px); }
+  100% { transform: translate(2px, -2px); }
+}
+
+.error-promo-text {
+  margin-top: 20px;
+
+  font-family: "Digital", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  color: white;
+}
+
+.wrapper-dreampills-pilule {
+  margin-left: 45px;
+}
+
+.error-cant-found {
+  margin: 0 auto;
+  margin-top: 90px;
+
+  font-family: "Digital", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+  white-space: nowrap; /* Не переносить текст на новую строку */
+  overflow: hidden; /* Скрыть текст, который ещё не напечатан */
+  border-right: 2px solid black; /* Имитация курсора */
+  width: 0; /* Начальная ширина — скрытый текст */
+  animation: typing 6s steps(31, end) infinite, blink 0.5s step-end infinite;
+}
+
+@keyframes typing {
+  0% {
+      width: 0; /* Начало: текст полностью скрыт */
+  }
+  50% {
+      width: 31ch; /* Текст полностью напечатан */
+  }
+  75% {
+      width: 31ch; /* Текст остаётся видимым в течение 25% времени */
+  }
+  100% {
+      width: 0; /* Текст стирается */
+  }
+}
+
+@keyframes blink {
+  50% {
+      border-color: transparent; /* Моргание курсора */
+  }
+  100% {
+      border-color: black;
+  }
+}
+
+
+.wrapper-text-dreampills span {
+  font-family: "Digital", sans-serif;
+  font-size: 96px;
+  font-weight: 400;
+  color: #7dbae7;
+}
+
+.animation-dreampill {
+  animation: colorChange 4s infinite;
+}
+
+@keyframes colorChange {
+  0% {
+      color: #FF7F00;
+  }
+  50% {
+      color: #FFFFFF;
+  }
+  100% {
+      color: #FF7F00;
+  }
+}
+
+/* Анимация клика по мышке */
+.click {
+  position: absolute;
+  animation: ripple 0.6s linear;
+  background-image: url('../image/click.svg');
+  pointer-events: none;
+}
+
+@keyframes ripple {
+  to {
+      transform: scale(4);
+      opacity: 0;
+  }
+}
+
+.loading-container {
+  text-align: center;
+}
+
+.loading-text {
+  font-family: "Digital", sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  color: white;
+  margin: 20px;
+}
+
+/* Контейнер для палочек */
+.loading-bar {
+  display: flex;
+  gap: 4px; /* Отступы между палочками */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Стиль палочек */
+.bar {
+  width: 20px;
+  height: 50px;
+  background-color: white;
+  opacity: 0; /* Начальное состояние */
+  animation: fade-in 10s infinite; /* Анимация */
+}
+
+/* Уникальная задержка для каждой палочки */
+.bar:nth-child(1) { animation-delay: 0s; }
+.bar:nth-child(2) { animation-delay: 1s; }
+.bar:nth-child(3) { animation-delay: 2s; }
+.bar:nth-child(4) { animation-delay: 3s; }
+.bar:nth-child(5) { animation-delay: 4s; }
+.bar:nth-child(6) { animation-delay: 5s; }
+.bar:nth-child(7) { animation-delay: 6s; }
+.bar:nth-child(8) { animation-delay: 7s; }
+.bar:nth-child(9) { animation-delay: 8s; }
+.bar:nth-child(10) { animation-delay: 9s; }
+
+/* Анимация появления */
+@keyframes fade-in {
+  0% { opacity: 1; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.game {
+  position: relative;
+
+  display: flex;
+  width: 1730px;
+  height: 570px;
+  margin: 0 auto;
+  margin-top: 110px;
+
+  border: 4px solid black;
+  background-color: white;
+}
+
+.game div {
+  margin: auto 0;
+  
+}
+
+.game::after {
+  content: '';
+
+  position: absolute;
+  bottom: 200px;
+  left: 0;
+
+  width: 100%;
+  height: 5px;
+
+  background-color: black;
+}
+
+.dino {
+  position: absolute;
+  bottom: 180px;
+  left: 0;
+  width: 185px;
+  height: 190px;
+  background-image: url('../image/dino.svg');
+  /* background-color: black;
+  clip-path: polygon(50% 0%, 65% 25%, 100% 35%, 75% 50%, 85% 100%, 50% 80%, 15% 100%, 25% 50%, 0% 35%, 35% 25%); */
+  animation: moveDino 3s linear infinite;
+}
+
+@keyframes moveDino {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(640px); /* Доходит до кактуса */
+  }
+  100% {
+    transform: translateX(0); /* Возвращается обратно */
+  }
+}
+
+.cactus {
+  position: absolute;
+  bottom: 200px;
+  left: 820px;
+
+  width: 164px;
+  height: 150px;
+
+  background-image: url('../image/cactus.svg');
+}
+
+.game-pilule {
+  position: absolute;
+  top: 220px;
+  left: 1185px;
+
+  width: 128px;
+  height: 130px;
+  animation: moveGamePilule 2s linear infinite;
+}
+
+@keyframes moveGamePilule {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-200px); /* Доходит до экрана */
+  }
+  100% {
+    transform: translateY(0); /* Возвращается обратно */
+  }
+}
+
+.dreampills {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.wrapper-dreampills {
+  display: flex;
+  align-items: end;
+}
+
+.wrapper-text-dreampills {
+  display: flex;
+  flex-direction: column;
+  margin: auto 0;
+  margin-left: 30px;
+}
+
+.dreampills-problem-text {
+  margin-top: 10px;
+  display: block;
+
+  font-family: "Inter", serif;
+  font-size: 48px;
+  font-weight: 400;
+  color: white; 
+}
+
+.window-errors {
+  position: relative;
+
+  height: 1275px;
+  width: 1075px;
+  margin: 0 auto;
+  margin-top: 115px;
+}
+
+.error-window {
+  position: absolute;
+
+  display: flex;
+  flex-direction: column;
+  width: 995px;
+  height: 590px;
+  padding: 5px;
+  padding-top: 55px;
+
+  background-color: #0254E6;
+  border: 5px solid #000000;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+
+  opacity: 0; /* Начальное состояние */
+  animation: fade-in-error 10s infinite; /* Анимация */
+}
+
+.error-window__text {
+  margin-left: 30px;
+
+  font-family: "Digital", sans-serif;
+  font-size: 48px;
+  color: white;
+}
+
+.error-window__wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  margin-top: 40px;
+
+  border: 1px solid #000000;
+  background-color: #fff;
+}
+
+.error-window__promo {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+
+.error-window__promo-img {
+  width: 105px;
+  height: 105px;
+}
+
+.error-window__promo-text {
+  margin: auto 0;
+  margin-left: 45px;
+
+  font-family: "Digital", sans-serif;
+  font-size: 48px;
+}
+
+.error-window__button {
+  width: 250px;
+  height: 90px;
+  margin: 0 auto;
+  margin-top: 90px;
+
+  font-family: "Digital", sans-serif;
+  font-size: 48px;
+
+  background-color: #EDEDED;
+  border: 5px solid rgba(0,0,0, 0.55);
+
+  cursor: pointer;
+}
+
+/* Уникальная задержка для каждой палочки */
+.error-window:nth-child(1) {
+  top: 0;
+  right: 0;
+  animation-delay: 0s;
+}
+.error-window:nth-child(2) {
+  top: 128px;
+  right: 85px;
+  animation-delay: 1s;
+}
+.error-window:nth-child(3) {
+  top: 257px;
+  right: 170px;
+  animation-delay: 2s;
+}
+.error-window:nth-child(4) {
+  top: 400px;
+  right: 280px;
+  animation-delay: 3s;
+}
+.error-window:nth-child(5) {
+  top: 540px;
+  right: 170px;
+  animation-delay: 4s;
+}
+.error-window:nth-child(6) {
+  top: 680px;
+  right: 85px;
+  animation-delay: 5s;
+}
+
+/* Анимация появления */
+@keyframes fade-in-error {
+  0% { opacity: 1; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.loading-container {
+  margin: 0 auto;
+  margin-top: 90px;
+}
+
+.loading-bar {
+  border: 8px solid #000000;
+  padding: 8px;
+  gap: 10px;
+}
+
+.bar {
+  width: 30px;
+  height: 45px;
+}
+
+.loading-text {
+  margin: 20px;
+}
+
+
+.dvd-wrapper {
+  width: 100%;
+  margin-top: 170px;
+  margin-bottom: 230px;
+
+  overflow: hidden;
+}
+
+.dvd__text-wrapper {
+  font-family: "Digital", sans-serif;
+  font-size: 48px;
+  color: white;
+
+  white-space: nowrap;
+}
+
+.dvd__text-wrapper span {
+  font-family: "Digital", sans-serif;
+  font-size: 48px;
+  color: white;
+}
+
+.dvd__text-wrapper span:nth-child(2n) {
+  color: #FF7F00;
+}
+
+.container-dvd {
+  position: relative;
+
+  width: 100vw;
+  height: 460px;
+}
+
+.dvd {
+  position: absolute;
+
+  display: flex;
+  width: 295px;
+  height: 105px;
+
+  font-family: 'Comfortaa', sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  color: black;
+
+  border: 3px solid black;
+  border-radius: 100px;
+  align-items: center;
+  justify-content: center;
+}
+
+.dvd:nth-child(1) {
+  background: #0254E6;
+}
+
+.dvd:nth-child(2) {
+  background: #F21BF6;
+}
+
+.dvd:nth-child(3) {
+  background: #A9E602;
+}
+
+
+@media (max-width: 1920px) {
+  .error-page {
+    height: 655px;
+  }
+
+  .error-text .pill {
+    width: 108px;
+    height: 110px;
+  }
+
+  .error-promo-text {
+    font-size: 32px;
+  }
+
+  .error-cant-found {
+    margin-top: 120px;
+  }
+
+  .dreampills {
+    width: 1120px;
+    margin-top: 105px;
+    padding-left: 160px;
+  }
+
+  .wrapper-text-dreampills span {
+    font-size: 64px;
+  }
+
+  .wrapper-dreampills-smile {
+    width: 100px;
+    height: 195px;
+  }
+
+  .wrapper-dreampills-pilule {
+    width: 200px;
+    height: 205px;
+    margin-left: 65px;
+  }
+
+  .dreampills-problem-text {
+    font-size: 40px;
+  }
+
+  .window-errors {
+    height: 1045px;
+    width: 775px;
+    margin-top: 110px;
+  }
+  
+  .error-window {
+    width: 795px;
+    height: 475px;
+    padding: 0;
+    padding-top: 60px;
+  }
+  
+  .error-window__text {
+    margin-left: 25px;
+
+    font-size: 40px;
+  }
+  
+  .error-window__wrapper {
+    margin-top: 50px;
+  
+    border: none;
+    border-top: 1px solid #000000;
+  }
+  
+  .error-window__promo-img {
+    width: 88px;
+    height: 88px;
+  }
+  
+  .error-window__promo-text {
+    margin-left: 30px;
+
+    font-size: 40px;
+  }
+  
+  .error-window__button {
+    width: 210px;
+    height: 75px;
+    margin-top: 45px;
+  
+    font-size: 40px;
+  }
+  
+  /* Уникальная задержка для каждой палочки */
+  .error-window:nth-child(1) {
+    top: 0;
+    right: 0;
+    animation-delay: 0s;
+  }
+
+  .error-window:nth-child(2) {
+    top: 108px;
+    right: 45px;
+  }
+
+  .error-window:nth-child(3) {
+    top: 217px;
+    right: 90px;
+  }
+
+  .error-window:nth-child(4) {
+    top: 340px;
+    right: 140px;
+  }
+
+  .error-window:nth-child(5) {
+    top: 450px;
+    right: 45px;
+  }
+
+  .error-window:nth-child(6) {
+    top: 570px;
+    right: -45px;
+  }
+
+  .loading-container {
+    margin-top: 78px;
+  }
+
+  .game {
+    width: 1265px;
+    height: 460px;
+    margin-top: 74px;
+  }
+  
+  .game::after {
+    bottom: 120px;
+
+    width: 100%;
+    height: 10px;
+  }
+  
+  .dino {
+    bottom: 107px;
+
+    width: 155px;
+    height: 155px;
+
+    background-size: contain;
+
+    animation: moveDino 3s linear infinite;
+  }
+  
+  @keyframes moveDino {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(530px); /* Доходит до кактуса */
+    }
+    100% {
+      transform: translateX(0); /* Возвращается обратно */
+    }
+  }
+  
+  .cactus {
+    bottom: 120px;
+    left: 670px;
+  
+    width: 135px;
+    height: 124px;
+  
+    background-size: contain;
+  }
+  
+  .game-pilule {
+    left: 925px;
+  
+    width: 90px;
+    height: 90px;
+    animation: moveGamePilule 2s linear infinite;
+  }
+  
+  @keyframes moveGamePilule {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-200px); /* Доходит до экрана */
+    }
+    100% {
+      transform: translateY(0); /* Возвращается обратно */
+    }
+  }
+
+  .container-dvd {
+    height: 315px;
+  }
+
+  .dvd {
+    width: 215px;
+    height: 75px;
+
+    font-size: 25px;
+  }
+
+  .dvd-wrapper {
+    margin-top: 125px;
+    margin-bottom: 90px;
+  }
+
+  .dvd__text-wrapper {
+    font-size: 35px;
+  }
+
+  .dvd__text-wrapper span {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .error-page {
+    height: 495px;
+  }
+
+  .error-text {
+    margin-top: 24%;
+
+    font-size: 96px;
+  }
+
+  .error-text .pill {
+    width: 75px;
+    height: 75px;
+  }
+
+  .error-promo-text {
+    font-size: 24px;
+  }
+
+  .error-cant-found {
+    margin-top: 99px;
+  }
+
+  .dreampills {
+    width: 840px;
+    margin-top: 42px;
+    padding-left: 0;
+  }
+
+  .wrapper-text-dreampills span {
+    font-size: 64px;
+  }
+
+  .wrapper-dreampills-smile {
+    width: 80px;
+    height: 195px;
+  }
+
+  .wrapper-dreampills-pilule {
+    width: 140px;
+    height: 145px;
+  }
+
+  .dreampills-problem-text {
+    margin-top: 40px;
+    padding-left: 24px;
+
+    font-size: 36px;
+  }
+
+  .window-errors {
+    height: 780px;
+    width: 707px;
+    margin-top: 165px;
+  }
+  
+  .error-window {
+    width: 675px;
+    height: 355px;
+    padding-top: 35px;
+  }
+  
+  .error-window__text {
+    margin-left: 30px;
+
+    font-size: 32px;
+  }
+  
+  .error-window__wrapper {
+    margin-top: 30px;
+  }
+  
+  .error-window__promo-img {
+    width: 65px;
+    height: 65px;
+  }
+  
+  .error-window__promo-text {
+    margin-left: 0;
+
+    font-size: 32px;
+  }
+  
+  .error-window__button {
+    width: 170px;
+    height: 60px;
+    margin-top: 25px;
+  
+    font-size: 36px;
+  }
+  
+  /* Уникальная задержка для каждой палочки */
+  .error-window:nth-child(1) {
+    top: 0;
+    right: 0;
+    animation-delay: 0s;
+  }
+
+  .error-window:nth-child(2) {
+    top: 73px;
+    right: 29px;
+  }
+
+  .error-window:nth-child(3) {
+    top: 157px;
+    right: 67px;
+  }
+
+  .error-window:nth-child(4) {
+    top: 250px;
+    right: 115px;
+  }
+
+  .error-window:nth-child(5) {
+    top: 336px;
+    right: 52px;
+  }
+
+  .error-window:nth-child(6) {
+    top: 420px;
+    right: 2px;
+  }
+
+  .loading-container {
+    margin-top: 41px;
+  }
+
+  .loading-text {
+    font-size: 36px;
+  }
+
+  .bar {
+    width: 14px;
+    height: 38px;
+  }
+
+  .game {
+    width: 926px;
+    height: 337px;
+    margin-top: 74px;
+  }
+  
+  .game::after {
+    bottom: 60px;
+  }
+  
+  .dino {
+    bottom: 47px;
+
+    width: 128px;
+    height: 130px;
+
+    animation: moveDino 3s linear infinite;
+  }
+  
+  @keyframes moveDino {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(410px); /* Доходит до кактуса */
+    }
+    100% {
+      transform: translateX(0); /* Возвращается обратно */
+    }
+  }
+  
+  .cactus {
+    bottom: 60px;
+    left: 540px;
+  
+    width: 136px;
+    height: 126px;
+  }
+  
+  .game-pilule {
+    left: 725px;
+  
+    width: 78px;
+    height: 78px;
+    animation: moveGamePilule 2s linear infinite;
+  }
+  
+  @keyframes moveGamePilule {
+    0% {
+      transform: translateY(-30px);
+    }
+    50% {
+      transform: translateY(-200px); /* Доходит до экрана */
+    }
+    100% {
+      transform: translateY(-30px); /* Возвращается обратно */
+    }
+  }
+
+  .dvd-wrapper {
+    margin-top: 50px;
+    margin-bottom: 540px;
+  }
+
+  .dvd__text-wrapper {
+    font-size: 32px;
+  }
+
+  .dvd__text-wrapper span {
+    font-size: 32px;
+  }
+
+  .container-dvd {
+    height: 236px;
+  }
+
+  .dvd {
+    width: 165px;
+    height: 60px;
+
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1025px) {
+  .error-page {
+    height: 382px;
+  }
+
+  .error-text {
+    margin-top: 27%;
+    font-size: 64px;
+  }
+
+  .error-text .pill {
+    width: 42px;
+    height: 42px;
+  }
+
+  .error-promo-text {
+    font-size: 16px;
+  }
+
+  .error-cant-found {
+    margin-top: 76px;
+
+    font-size: 16px;
+  }
+
+  .dreampills {
+    width: 600px;
+    margin-top: 83px;
+    padding-left: 0;
+  }
+
+  .wrapper-text-dreampills span {
+    font-size: 40px;
+  }
+
+  .wrapper-dreampills-smile {
+    width: 58px;
+    height: 150px;
+  }
+
+  .wrapper-dreampills-pilule {
+    width: 100px;
+    height: 100px;
+    margin-left: 59px;
+  }
+
+  .wrapper-text-dreampills {
+    margin-left: 60px;
+  }
+
+  .dreampills-problem-text {
+    margin-top: 32px;
+    padding-left: 0px;
+
+    font-size: 32px;
+  }
+
+  .window-errors {
+    height: 590px;
+    width: 455px;
+    margin-top: 53px;
+  }
+  
+  .error-window {
+    width: 495px;
+    height: 270px;
+    padding: 0;
+    padding-top: 35px;
+  }
+  
+  .error-window__text {
+    margin-left: 20px;
+
+    font-size: 24px;
+  }
+  
+  .error-window__wrapper {
+    margin-top: 10px;
+  
+    border: none;
+    border-top: 1px solid #000000;
+  }
+  
+  .error-window__promo-img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .error-window__promo-text {
+    margin-left: 5px;
+
+    font-size: 24px;
+  }
+  
+  .error-window__button {
+    width: 130px;
+    height: 46px;
+    margin-top: 0;
+  
+    font-size: 24px;
+  }
+  
+  /* Уникальная задержка для каждой палочки */
+  .error-window:nth-child(1) {
+    top: 0;
+    right: 0;
+    animation-delay: 0s;
+  }
+
+  .error-window:nth-child(2) {
+    top: 70px;
+    right: 33px;
+  }
+
+  .error-window:nth-child(3) {
+    top: 132px;
+    right: 60px;
+  }
+
+  .error-window:nth-child(4) {
+    top: 200px;
+    right: 87px;
+  }
+
+  .error-window:nth-child(5) {
+    top: 263px;
+    right: 55px;
+  }
+
+  .error-window:nth-child(6) {
+    top: 324px;
+    right: 30px;
+  }
+
+  .loading-container {
+    margin-top: 78px;
+  }
+
+  .loading-text {
+    font-size: 24px;
+  }
+
+  .bar {
+    width: 10px;
+    height: 30px;
+  }
+
+  .game {
+    width: 711px;
+    height: 258px;
+    margin-top: 54px;
+  }
+  
+  .game::after {
+    bottom: 22px;
+
+    width: 100%;
+    height: 6px;
+  }
+  
+  .dino {
+    bottom: 13px;
+
+    width: 93px;
+    height: 95px;
+
+    animation: moveDino 3s linear infinite;
+  }
+  
+  @keyframes moveDino {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(330px); /* Доходит до кактуса */
+    }
+    100% {
+      transform: translateX(0); /* Возвращается обратно */
+    }
+  }
+  
+  .cactus {
+    bottom: 21px;
+    left: 427px;
+  
+    width: 105px;
+    height: 97px;
+  
+    background-size: contain;
+  }
+  
+  .game-pilule {
+    left: 575px;
+  
+    width: 60px;
+    height: 60px;
+    animation: moveGamePilule 2s linear infinite;
+  }
+  
+  @keyframes moveGamePilule {
+    0% {
+      transform:  translateY(-50px);
+    }
+    50% {
+      transform: translateY(-200px); /* Доходит до экрана */
+    }
+    100% {
+      transform:  translateY(-50px); /* Возвращается обратно */
+    }
+  }
+
+  .container-dvd {
+    height: 246px;
+  }
+
+  .dvd {
+    width: 110px;
+    height: 40px;
+
+    font-size: 14px;
+  }
+
+  .dvd-wrapper {
+    margin-top: 88px;
+    margin-bottom: 150px;
+  }
+
+  .dvd__text-wrapper {
+    font-size: 20px;
+  }
+
+  .dvd__text-wrapper span {
+    font-size: 20px;
+  }
+}
+
+@media(max-width: 768px) {
+  .error-page {
+    height: 236px;
+  }
+
+  .error-text {
+    font-size: 40px;
+  }
+
+  .error-text .pill {
+    width: 30px;
+    height: 30px;
+  }
+
+  .error-promo-text {
+    font-size: 11px;
+  }
+
+  .error-cant-found {
+    margin-top: 190px;
+
+    font-size: 13px;
+  }
+
+  .dreampills {
+    width: 340px;
+    margin-top: 73px;
+    padding-left: 0;
+  }
+
+  .wrapper-text-dreampills span {
+    font-size: 24px;
+  }
+
+  .wrapper-dreampills-smile {
+    width: 50px;
+    height: 90px;
+  }
+
+  .wrapper-text-dreampills {
+    margin-left: 20px;
+  }
+
+  .wrapper-dreampills-pilule {
+    width: 46px;
+    height: 46px;
+    margin-left: 15px;
+  }
+
+  .dreampills-problem-text {
+    margin-top: 12px;
+
+    font-size: 20px;
+  }
+
+  .window-errors {
+    height: 326px;
+    width: 296px;
+    margin-top: 24px;
+  }
+  
+  .error-window {
+    width: 305px;
+    height: 160px;
+    padding: 0;
+    padding-top: 20px;
+  }
+  
+  .error-window__text {
+    margin-left: 20px;
+
+    font-size: 14px;
+  }
+  
+  .error-window__promo {
+    margin-top: 20px;
+  }
+
+  .error-window__wrapper {
+    margin-top: 10px;
+  
+    border: none;
+    border-top: 1px solid #000000;
+  }
+  
+  .error-window__promo-img {
+    width: 33px;
+    height: 33px;
+  }
+  
+  .error-window__promo-text {
+    margin-left: 30px;
+
+    font-size: 14px;
+  }
+  
+  .error-window__button {
+    width: 80px;
+    height: 30px;
+    margin-top: 15px;
+  
+    font-size: 14px;
+  }
+  
+  /* Уникальная задержка для каждой палочки */
+  .error-window:nth-child(1) {
+    top: 0;
+    right: 0;
+    animation-delay: 0s;
+  }
+
+  .error-window:nth-child(2) {
+    top: 38px;
+    right: 22px;
+  }
+
+  .error-window:nth-child(3) {
+    top: 82px;
+    right: 41px;
+  }
+
+  .error-window:nth-child(4) {
+    top: 130px;
+    right: 20px;
+  }
+
+  .error-window:nth-child(5) {
+    top: 168px;
+    right: 1px;
+  }
+
+  .error-window:nth-child(6) {
+    display: none;
+  }
+
+  .loading-container {
+    margin-top: 11px;
+  }
+
+  .loading-text {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+
+  .bar {
+    width: 7px;
+    height: 6px;
+  }
+
+  .game {
+    width: 368px;
+    height: 133px;
+    margin-top: 36px;
+  }
+  
+  .game::after {
+    bottom: 18px;
+
+
+    width: 100%;
+    height: 4px;
+  }
+  
+  .dino {
+    bottom: 14px;
+
+    width: 47px;
+    height: 49px;
+
+    background-size: contain;
+
+    animation: moveDino 3s linear infinite;
+  }
+  
+  @keyframes moveDino {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(150px); /* Доходит до кактуса */
+    }
+    100% {
+      transform: translateX(0); /* Возвращается обратно */
+    }
+  }
+  
+  .cactus {
+    bottom: 20px;
+    left: 205px;
+  
+    width: 50px;
+    height: 50px;
+  
+    background-size: contain;
+  }
+  
+  .game-pilule {
+    left: 285px;
+  
+    width: 30px;
+    height: 30px;
+    animation: moveGamePilule 2s linear infinite;
+  }
+  
+  @keyframes moveGamePilule {
+    0% {
+      transform: translateY(-150px);
+    }
+    50% {
+      transform: translateY(-220px); /* Доходит до экрана */
+    }
+    100% {
+      transform: translateY(-150px); /* Возвращается обратно */
+    }
+  }
+
+  .dvd-wrapper {
+    margin-top: 58px;
+    margin-bottom: 80px;
+  }
+
+  .dvd__text-wrapper {
+    font-size: 10px;
+  }
+
+  .dvd__text-wrapper span {
+    font-size: 10px;
+  }
+
+  .container-dvd {
+    height: 115px;
+  }
+
+  .dvd {
+    width: 73px;
+    height: 26px;
+
+    font-size: 10px;
+  }
+}

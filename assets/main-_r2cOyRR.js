@@ -1,4 +1,5 @@
 const r=()=>`
+    <section class="main">
       <div class="error-page">
         <div class="error-text">
             4<span class="pill"><img src="./image/pill-icon.svg"/></span>4
@@ -172,4 +173,5 @@ const r=()=>`
         <span>DREAMPILLS</span>-<span>DREAMPILLS</span>-<span>DREAMPILLS</span>-<span>DREAMPILLS</span>-<span>DREAMPILLS</span>-<span>DREAMPILLS</span>-<span>DREAMPILLS</span>-<span>DREAMPILLS</span>-<span>DREAMPILLS</span>-<span>DREAMPILLS</span>-<span>DREAMPILLS</span>
       </div>
     </div>
+    </section>
     `;export{r as default};

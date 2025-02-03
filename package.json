@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://a1bolt1k.github.io/dreampills-OC",
+  "homepage": "https://a1bolt1k.github.io/dreampills-OC/sign",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
